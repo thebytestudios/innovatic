@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovaTic | Academia de Tecnología</title>
+    <link rel="icon" href="./img/icono.png" type="image/png">
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container" onclick="irA('inicio')">
+    <img src="./img/logo innovatic.png" alt="InnovaTic Logo" class="logo-img">
+     </div>
+
+        <nav class="nav-links">
+            <a onclick="irA('inicio')">Inicio</a>
+            <a onclick="irA('nosotros')">La Academia</a>
+            <a onclick="irA('cursos')">Cursos</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="btn-inscribirse" onclick="irA('contacto')">¡Inscríbete Hoy!</button>
+            
+            <div class="menu-btn" id="menuBtn" onclick="toggleMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+
+        <nav class="nav-links mobile" id="navLinksMobile">
+            <a onclick="irA('inicio')">Inicio</a>
+            <a onclick="irA('nosotros')">La Academia</a>
+            <a onclick="irA('cursos')">Cursos</a>
+        </nav>
+    </header>
+
+    <main id="inicio" class="seccion-pagina activa">
+        <div class="hero">
+            <div class="hero-text">
+                <span class="badge">🚀 El futuro empieza aquí</span>
+                <h1>Despierta tu <br><span class="text-gradient">Genio Tecnológico</span></h1>
+                <p>No seas solo un consumidor de tecnología, conviértete en creador. Aprende a programar, diseñar y construir el futuro con nuestros programas prácticos e interactivos.</p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                    <button class="btn" onclick="irA('cursos')">Ver Catálogo</button>
+                    <button class="btn btn-outline" onclick="irA('nosotros')">Saber más</button>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="floating-card fc-1">💻 +500 Alumnos</div>
+                <div class="floating-card fc-2">⭐ Práctica 100%</div>
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Estudiantes programando" class="hero-image">
+            </div>
+        </div>
+    </main>
+
+    <main id="nosotros" class="seccion-pagina">
+<section class="academia">
+
+    <!-- BARRA DE CONFIANZA -->
+    <div class="barra-confianza">
+        ✔ Certificación incluida
+        <span>|</span>
+        ✔ Cupos limitados
+        <span>|</span>
+        ✔ Inscripciones abiertas
+    </div>
+
+    <!-- PRESENTACIÓN -->
+    <h2>Nuestra <span class="text-gradient">Academia</span></h2>
+    <p class="sub">
+        Formamos creadores digitales con disciplina, innovación
+        y enfoque práctico.
+    </p>
+
+    <!-- MISIÓN Y VISIÓN -->
+    <div class="bloque glass">
+        <div class="mv-grid">
+            <div class="mv-box">
+                <h3>🎯 Misión</h3>
+                <p>Desarrollar competencias tecnológicas mediante formación práctica y estructurada.</p>
+            </div>
+
+            <div class="mv-box">
+                <h3>🚀 Visión</h3>
+                <p>Ser referentes en educación digital con impacto real en la comunidad.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="bloque video-box">
+        <h3>🎥 Conoce Nuestra Experiencia</h3>
+        <iframe 
+            width="100%" 
+            height="315" 
+            src="https://www.youtube.com/embed/b5GnK2b3k24" 
+            title="Video de InnovaTic" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    <!-- POR QUÉ ELEGIRNOS + METODOLOGÍA -->
+<div class="bloque metodologia-section">
+
+    <h3 class="titulo-central">
+        ¿Por Qué <span class="text-gradient">Elegirnos</span>?
+    </h3>
+
+    <div class="elegirnos-grid">
+        <div>Metodología 100% práctica</div>
+        <div>Clases personalizadas</div>
+        <div>Proyectos reales</div>
+        <div>Certificación incluida</div>
+        <div>Acompañamiento continuo</div>
+    </div>
+
+    <div class="metodologia-contenido">
+
+        <h3 class="titulo-central">
+            🚀 Metodología de Enseñanza
+        </h3>
+
+        <div class="metodologia-pasos">
+
+            <div class="paso">
+                <h4>Aprender haciendo</h4>
+                <p>Práctica desde el primer día con aplicación inmediata.</p>
+            </div>
+
+            <div class="paso">
+                <h4>Proyectos por nivel</h4>
+                <p>Desarrollo progresivo con retos reales.</p>
+            </div>
+
+            <div class="paso">
+                <h4>Evaluación práctica</h4>
+                <p>Medimos lo que el estudiante crea y construye.</p>
+            </div>
+
+            <div class="paso">
+                <h4>Mentoría personalizada</h4>
+                <p>Seguimiento constante y acompañamiento estratégico.</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+    <!-- RESULTADOS -->
+    <div class="bloque stats-box">
+        <h3>📊 Resultados</h3>
+        <div class="stats">
+            <div><h2>+200</h2><p>Estudiantes</p></div>
+            <div><h2>95%</h2><p>Satisfacción</p></div>
+            <div><h2>5+</h2><p>Años</p></div>
+            <div><h2>+50</h2><p>Proyectos</p></div>
+        </div>
+    </div>
+
+   <!-- PERFIL DEL ESTUDIANTE -->
+<div class="bloque perfil-section">
+
+    <h3 class="titulo-central">
+        🎓 Perfil del <span class="text-gradient">Estudiante</span>
+    </h3>
+
+    <p class="perfil-sub">
+        Nuestros programas están diseñados para distintos perfiles con objetivos claros
+        y enfoque práctico.
+    </p>
+
+    <div class="perfil-grid-elegante">
+
+        <div class="perfil-item">
+            <h4>Niños (8–12 años)</h4>
+            <p>Inician en programación y pensamiento lógico mediante herramientas visuales y creativas.</p>
+        </div>
+
+        <div class="perfil-item">
+            <h4>Jóvenes (13–17 años)</h4>
+            <p>Desarrollan proyectos reales en programación, diseño y tecnología aplicada.</p>
+        </div>
+
+        <div class="perfil-item">
+            <h4>Emprendedores</h4>
+            <p>Aprenden habilidades digitales para potenciar sus negocios y presencia online.</p>
+        </div>
+
+        <div class="perfil-item">
+            <h4>Docentes</h4>
+            <p>Fortalecen sus competencias TIC para innovar en el aula con herramientas actuales.</p>
+        </div>
+
+    </div>
+
+</div>
+    <!-- INSTRUCTOR -->
+<div class="bloque instructor-section"> 
+    <h3>💼 Nuestro Instructor</h3>
+
+    <div class="instructor-box">
+
+        <div class="instructor-img">
+            <img src="https://img.sorianoticias.com/imagenes/2026-02/profesor-informatica_260204130620.png" alt="Instructor">
+        </div>
+
+        <div class="instructor-info">
+
+            <h4>Ing. Juan Pérez</h4>
+            <p class="cargo">
+                Especialista en Tecnología Educativa & Desarrollo Web
+            </p>
+
+            <div class="badges">
+                <span>🎓 Ingeniero en Sistemas</span>
+                <span>🏫 Universidad Técnica de Manabí</span>
+                <span>📜 Certificación en Desarrollo Web</span>
+                <span>💻 5+ años de experiencia</span>
+            </div>
+
+            <div class="descripcion">
+                <p>
+                    Profesional apasionado por la educación digital con experiencia
+                    formando jóvenes y adultos en programación, diseño web y competencias TIC.
+                </p>
+
+                <p>
+                    Ha liderado más de 50 proyectos académicos aplicados al entorno real,
+                    combinando disciplina, innovación y metodología práctica.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <!-- VALORES -->
+<div class="bloque valores-section">
+    <h3>🛡 Valores Institucionales</h3>
+
+    <div class="valores-grid">
+        <div class="valor-item">Responsabilidad</div>
+        <div class="valor-item">Disciplina</div>
+        <div class="valor-item">Innovación</div>
+        <div class="valor-item">Ética Digital</div>
+        <div class="valor-item">Respeto</div>
+    </div>
+</div>
+
+    <!-- GALERÍA REAL -->
+    <div class="bloque">
+        <h3>📸 Nuestro Ambiente</h3>
+        <div class="nosotros-grid mejorada">
+            <img src="https://i.imgur.com/205xWvf.jpeg">
+            <img src="https://i.imgur.com/xuO4KsC.jpeg">
+             <img src="https://i.imgur.com/Kv0bE9H.jpeg">
+            <img src="https://i.imgur.com/4Smbjwt.jpeg"> 
+            <img src="https://i.imgur.com/vrWEqlg.jpeg">
+            <img src="https://i.imgur.com/NVaVxPR.jpeg">
+            
+        </div>
+    </div>
+
+    <!-- TESTIMONIOS -->
+    <div class="bloque testimonial premium-testimonial">
+        <h3>⭐ Opiniones</h3>
+        <p>"Aprendí a programar mi primer proyecto real en pocas semanas."</p>
+        <strong>- Estudiante InnovaTic</strong>
+    </div>
+
+    <!-- MINI DIAGNÓSTICO -->   
+
+       <div class="asesor-box">
+    <h3> 🧠Descubre tu curso ideal</h3>
+
+    <select id="edadSelector">
+        <option value="">Selecciona tu edad</option>
+        <option value="nino">7 - 12 años</option>
+        <option value="joven">13 - 17 años</option>
+        <option value="adulto">18 años en adelante</option>
+    </select>
+
+    <select id="interesSelector">
+        <option value="">¿Qué te interesa más?</option>
+        <option value="programacion">Programación</option>
+        <option value="diseno">Diseño y creatividad</option>
+        <option value="ofimatica">Ofimática</option>
+        <option value="robotica">Robótica</option>
+    </select>
+
+    <button onclick="recomendarCurso()">Ver recomendación</button>
+
+    <div id="resultadoCurso" class="resultado-curso"></div>
+</div>
+
+<section class="faq-section">
+    <h2>Preguntas Frecuentes</h2>
+
+    <div class="faq-item">
+        <button class="faq-question">¿Necesito conocimientos previos?</button>
+        <div class="faq-answer">
+            No. Nuestros cursos están diseñados desde nivel básico.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">¿Qué edad mínima se requiere?</button>
+        <div class="faq-answer">
+            Desde los 7 años en adelante.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">¿Incluye certificado?</button>
+        <div class="faq-answer">
+            Sí, entregamos certificado al finalizar el curso.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">¿Cómo puedo inscribirme?</button>
+        <div class="faq-answer">
+            Puedes inscribirte a través del formulario o contactándonos por WhatsApp.
+        </div>
+    </div>
+</section>
+     
+   <!-- INFORMACIÓN GENERAL -->
+<div class="bloque info-final centrado">
+    <h3>Información General</h3>
+
+    <div class="info-datos">
+        <p>📍 Dirección: Tu dirección</p>
+        <p>📧 Correo: tuemail@email.com</p>
+        <p>📞 Teléfono: +593 xxx xxx</p>
+    </div>
+
+    <button class="btn" onclick="irA('contacto')">
+        Inscribirme Ahora
+    </button>
+</div>
+
+</section>
+    </main>
+
+    <main id="cursos" class="seccion-pagina">
+        <h2 style="text-align: center; font-size: 2.8rem; margin-bottom: 10px;">Programas de <span class="text-gradient">Formación</span></h2>
+        <p style="text-align: center; color: #94a3b8; font-size: 1.1rem;">Elige tu camino en el mundo digital</p>
+        
+        <div class="grid-cursos">
+
+            <!--CURSOS-->
+           <div class="card">
+    <img src="data:image/png;base64,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" alt="Curso de Programación" class="card-img">
+    <h3>Programación</h3>
+    <p>Aprende lógica y desarrollo desde cero.</p>
+</div>
+
+
+            <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwyBRea8c6Vf17rQxEmFiLKo5geWO0_0BDNg&s" alt="Curso de Programación" class="card-img">
+    <h3>Programación</h3>
+    <p>Aprende lógica y desarrollo desde cero.</p>
+</div>
+
+
+
+            <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnBOLJgooX1hyj4CBpx6XwGGNMYO6WeEV0dg&s" alt="Curso de Robótica" class="card-img">
+    <h3>Robótica</h3>
+    <p>Construye y programa tus propios robots.</p>
+</div>
+        </div>
+    </main>
+
+<!--REGISTRO-->
+    <main id="contacto" class="seccion-pagina">
+        <div class="form-container">
+            <h2>Reserva tu <span class="text-gradient">Cupo</span></h2>
+
+         <form id="formRegistro">
+
+    <label>Nombre del Estudiante:</label>
+    <input type="text" id="nombre" name="nombre"
+           placeholder="Ej. Carlos Mendoza" required>
+
+    <label>Edad:</label>
+    <input type="number" id="edad" name="edad"
+           placeholder="Ej. 14" required>
+
+    <label>Número de Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono"
+           placeholder="Ej. 0999999999" required>
+
+    <label>Programa de Interés:</label>
+    <select id="curso" name="curso" required>
+        <option value="Informática Integral">Informática Integral</option>
+        <option value="Programación Scratch">Programación Scratch</option>
+        <option value="Modelado 3D Avanzado">Modelado 3D Avanzado</option>
+    </select>
+
+    <label>Mensaje (Opcional):</label>
+    <textarea id="mensaje" name="mensaje"
+              placeholder="Escribe aquí alguna consulta adicional..."
+              style="width:100%; padding:16px; border-radius:12px; background:rgba(11,17,32,0.8); border:1px solid #334155; color:white; margin-bottom:25px; resize:none;"
+              rows="4"></textarea>
+
+    <button type="submit" class="btn-whatsapp">
+        <span style="font-size: 1.3rem;">📩</span> Enviar Información
+    </button>
+
+</form>
+
+
+<!-- IFRAME OCULTO -->
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+        </div>
+    </main>
+    <div id="mensajeExito" style="
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+">
+    <div style="
+        background: #0f172a;
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+        box-shadow: 0 0 30px rgba(0,242,254,0.3);
+        border: 1px solid rgba(255,255,255,0.1);
+    ">
+        <div id="checkIcon" style="
+            font-size: 60px;
+            color: #00ff88;
+            margin-bottom: 20px;
+            display: none;
+        ">✔</div>
+
+        <div id="loaderIcon" style="
+            border: 5px solid rgba(255,255,255,0.1);
+            border-top: 5px solid #00f2fe;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            animation: girar 1s linear infinite;
+        "></div>
+
+        <h3 id="textoMensaje">Enviando información...</h3>
+    </div>
+</div>
+
+<!--NUMERO PARA LA BURBUJA -->
+
+<a href="https://wa.me/593991705088?text=Hola%20quiero%20información%20sobre%20los%20cursos"
+   class="whatsapp-float"
+   target="_blank">
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+      <path fill="white" d="M16 .4C7.5.4.6 7.3.6 15.8c0 2.8.7 5.5 2.1 7.9L.4 31.6l8.1-2.2c2.3 1.2 4.9 1.8 7.5 1.8 8.5 0 15.4-6.9 15.4-15.4S24.5.4 16 .4zm0 28.2c-2.3 0-4.6-.6-6.6-1.8l-.5-.3-4.8 1.3 1.3-4.7-.3-.5c-1.3-2-2-4.3-2-6.6C3.1 8.6 9 2.7 16 2.7s12.9 5.9 12.9 13-5.9 12.9-12.9 12.9zm7.1-9.6c-.4-.2-2.3-1.1-2.7-1.2-.4-.2-.6-.2-.9.2s-1 1.2-1.2 1.4c-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.2-2-1.2-1-2-2.3-2.2-2.7-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.6.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6s-.9-2.2-1.2-3c-.3-.8-.6-.7-.9-.7h-.8c-.3 0-.6.1-.9.4s-1.2 1.2-1.2 2.9 1.2 3.4 1.3 3.6c.2.2 2.4 3.7 5.8 5.2.8.3 1.4.5 1.9.6.8.2 1.5.2 2.1.1.6-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.7-.5z"/>
+   </svg>
+</a>
+
+<div id="alertaCustom" class="alerta"></div>
+
+
+<footer class="footer">
+    <p>© 2026 InnovaTic. Todos los derechos reservados.</p>
+</footer>
+
+
+<script src="./estilo.js"></script>
+</body>
+
+</body>
+</html>
