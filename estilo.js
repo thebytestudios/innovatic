@@ -24,7 +24,7 @@
         // Integración WhatsApp
        function enviarWA() {
 
-    const telefono = "593959002485"; // con código país
+    const telefono = "593982792425"; // con código país
     const nombre = document.getElementById('nombre')?.value.trim();
     const edad = document.getElementById('edad')?.value.trim();
     const curso = document.getElementById('curso')?.value || "Información general";
@@ -199,4 +199,5 @@ function irA(idSeccion) {
         top: 0,
         behavior: 'smooth'
     });
+
 }
